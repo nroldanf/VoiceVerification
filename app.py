@@ -3,7 +3,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/", methods=["POST"])
+# server = app.server
+
+@app.route("/verify", methods=["POST"])
 def main():
     #
     return {"Exito": "Ha sido un exito"}
