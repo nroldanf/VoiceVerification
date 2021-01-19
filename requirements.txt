@@ -1,2 +1,3 @@
 Resemblyzer==0.1.1.dev0
 Flask==1.1.2
+gunicorn==20.0.4
