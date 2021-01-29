@@ -42,6 +42,10 @@ def main():
 
     wav1 = preprocess_wav(wav_fpath1)
     wav2 = preprocess_wav(wav_fpath2)
+
+    os.remove(wav_fpath1)
+    os.remove(wav_fpath2)
+
     speaker_wavs = [wav1, wav2]
 
     speaker_embeds = [encoder.embed_utterance(speaker_wav) for speaker_wav in speaker_wavs]
