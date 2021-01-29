@@ -40,6 +40,9 @@ def main():
     file_var1.save(wav_fpath1)
     file_var2.save(wav_fpath2)
 
+    del file_var1
+    del file_var2
+
     wav1 = preprocess_wav(wav_fpath1)
     wav2 = preprocess_wav(wav_fpath2)
 
