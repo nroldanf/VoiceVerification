@@ -22,6 +22,9 @@ def main():
     file_var1 = request.files["audio1"]
     file_var2 = request.files["audio2"]
 
+    print(file_var1)
+    print(file_var2)
+
     file_extension1 = file_var1.filename.split(".")[-1]
     file_extension2 = file_var2.filename.split(".")[-1]
     
